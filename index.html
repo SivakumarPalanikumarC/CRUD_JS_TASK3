@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Enter your Full Nmae*</label><label class="validation-error hide" id="fullNameValidationError">Name required!</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Roll No</label><label class="validation-error hide" id="fullNameValidationError">RollNo !</label>
+                        <input type="text" name="rollno" id="rollno">
+                    </div>
+                    <div>
+                        <label>Year</label><label class="validation-error hide" id="fullNameValidationError">Year!.</label>
+                        <input type="text" name="year" id="year">
+                    </div>
+                    <div>
+                        <label>Department</label><label class="validation-error hide" id="fullNameValidationError">Dept!.</label>
+                        <input type="text" name="dept" id="dept">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Roll No</th>
+                            <th>Year</th>
+                            <th>Department</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
