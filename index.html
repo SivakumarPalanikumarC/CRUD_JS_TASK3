@@ -11,8 +11,9 @@
 <body>
 
     <table>
+        <caption>Table</caption>
         <tr>
-            <td>
+            <th>
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                     <div>
                         <label>Enter your Full Nmae*</label><label class="validation-error hide" id="fullNameValidationError">Name required!</label>
@@ -34,7 +35,7 @@
                         <input type="submit" value="Submit">
                     </div>
                 </form>
-            </td>
+            </th>
             <td>
                 <table class="list" id="employeeList">
                     <thead>
